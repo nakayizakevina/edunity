@@ -1,7 +1,7 @@
-export default function Header(){
+import './Header.css'
+export default function Header(props){
     return(
-        <header>
-            <h1>Hello, there</h1>
-        </header>
+        <h1 className='heading'>{props.value}</h1>
     )
 }
+
