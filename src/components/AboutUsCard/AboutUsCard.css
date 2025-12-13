@@ -1,0 +1,27 @@
+.aboutus__card {
+  width: max-content;
+  height: 54px;
+  display: flex;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--gray);
+}
+
+.aboutus__card p {
+  /* width: 197px; */
+  height: 32px;
+  opacity: 1;
+  top: 10.5px;
+  left: 55px;
+  font-family:sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: var(--purple);
+}

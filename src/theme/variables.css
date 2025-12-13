@@ -1,0 +1,19 @@
+:root{
+     
+    --green:#00BEAF;
+    --yellow: #FF9500;
+    --white: #FFFFFF;
+    --cream:#FFF8F0;
+    --black: #000000;
+    --blue:#17254E;
+    --gray:#F3F5F5;
+    --text:#4D5756;
+    --pink: #FFC5BD;
+    --purple:#191659;
+
+    --default-padding-left: 60px;
+    --default-padding-right:60px;
+
+
+    --page-width:1903px;
+}

@@ -1,11 +1,22 @@
 
 import './theme/global.css'
-import Header from './components/Header'
+import Home from './pages/Home/Home.jsx'
 
 function App() {
+  function check(){
+    console.log("Have been clicked");
+    
+  }
+
+  function loader(){
+
+  }
+
+
  return (
     <>
-     <Header  value="Hello...!" />
+    
+     <Home/> 
     </>
    
   )

@@ -1,0 +1,64 @@
+.card {
+  background-color: var(--gray);
+  width: 300px;
+  height: 413px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card__icon {
+  background-color: var(--green);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__title {
+  font-family:sans-serif;
+  color: var(--blue);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.card__message {
+  width: 240px;
+  height: 85px;
+  opacity: 1;
+  font-family:sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: var(--text);
+}
+
+
+.card:hover {
+  background-color: var(--green);
+}
+
+.card:hover .card__title,
+.card:hover .card__message {
+  color: var(--white);
+}
+
+.card:hover .card__icon {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+
+

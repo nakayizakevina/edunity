@@ -1,0 +1,24 @@
+.dropdown{
+    width:max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:10px;
+    z-index: 10px;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px 0px var(--blue);
+   }
+
+   .dropdown li{
+    cursor: pointer;
+    font-family: sans-serif;
+   }
+
+   .dropdown li:hover{
+    color: var(--green);
+   }

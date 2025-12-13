@@ -1,0 +1,11 @@
+button{
+    width: 100px;
+    height: 59px;
+    padding-top:3px;
+    padding-left:300px;
+    background-color: var(--yellow);
+    border-radius: 60px;
+    color: var(--white);
+    border: none;
+    padding: 15px;
+}
