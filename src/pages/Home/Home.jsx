@@ -1,18 +1,27 @@
 import "./Home.css";
-import "./Welcome.css"
-import "./Features.css"
-import "./Aboutus.css"
+import "./Welcome.css";
+import "./Features.css";
+import "./Aboutus.css";
+import "./Review.css";
+import "./Newapproach.css";
 
 import Header from "../../components/Header/Header.jsx";
 import NavBar from "../../components/Header/NavBar.jsx";
 import Button from "../../components/Button/Button.jsx";
 import FeaturedCard from "../../components/FeaturedCard/FeaturedCard.jsx";
 import AboutUsCard from "../../components/AboutUsCard/AboutUsCard.jsx";
+import ReviewCounts from "../../components/ReviewCounts/ReviewCounts.jsx";
 import Play from "../../assets/Icons/play.svg?react";
 import Course from "../../assets/Icons/course.svg?react";
 import Teacher from "../../assets/Icons/teacher.svg?react";
 import House from "../../assets/Icons/house.svg?react";
 import BookLogo from "../../assets/Icons/booklogo.svg?react";
+import Tick from '../../assets/Icons/tick.svg?react';
+import RedTick from '../../assets/Icons/redtick.svg?react';
+import Award from "../../assets/Icons/award.svg?react";
+import Classroom from "../../assets/Icons/classroom.svg?react";
+import Handshake from "../../assets/Icons/handshake.svg?react";
+import Man from "../../assets/Icons/man.svg?react";
 
 export default function Home() {
   return (
@@ -61,7 +70,7 @@ export default function Home() {
                 <a href="">Watch Now</a>
               </div>
             </div>
-          </div> 
+          </div>
           <div className="welcome__section__rightsection">
             <section className="student">
               <div className="student__background"></div>
@@ -161,15 +170,80 @@ export default function Home() {
             ad minim veniam, quis nostrud..
           </p>
           <div className="our__focus">
-            <AboutUsCard text="QUALITY EDUCATIORS"/>
-            <AboutUsCard text="PLAY TO LEARN"/>
-            <AboutUsCard text="SAFETY AND SECURITY"/>
-            <AboutUsCard text="HOMELIKE ENVIROMEND"/>
-        </div>
-        <Button title="Admission Open"/>
+            <AboutUsCard icon={<Tick/>} text="QUALITY EDUCATIORS" />
+            <AboutUsCard icon={<Tick/>} text="PLAY TO LEARN" />
+            <AboutUsCard icon={<Tick/>} text="SAFETY AND SECURITY" />
+            <AboutUsCard icon={<Tick/>} text="HOMELIKE ENVIROMEND" />
+          </div>
+          <Button title="Admission Open" />
         </div>
       </section>
-    
+      <section className="review__section">
+        <img
+          className="bluestar review__section-icons"
+          src="/bluestar.png"
+          alt="bluestar"
+        />
+        <img
+          className="whitecloud review__section-icons"
+          src="/whitecloud.png"
+          alt="whitecloud"
+        />
+        <img
+          className="whitestar review__section-icons"
+          src="/whitestar.png"
+          alt="whitestar"
+        />
+
+        <img className="reviewimg" src="/reviewimg.png" alt="Kids playing" />
+        <div className="review__numbers">
+          <ReviewCounts icon={<Man />} number="2,500" text="Total Teacher" />
+          <ReviewCounts
+            icon={<Handshake />}
+            number="5,000"
+            text="Total Student"
+          />
+          <ReviewCounts
+            icon={<Classroom />}
+            number="350"
+            text="Total Classroom"
+          />
+          <ReviewCounts
+            icon={<Award />}
+            number="1,200"
+            text="Best Awards Won"
+          />
+        </div>
+      </section>
+      <section className="newapproach__section">
+        <img className="rainbow newapproach__icon" src="/rainbow.png" alt="" />
+        <img className="wave newapproach__icon" src="/wave.png" alt="" />
+        <img className="drop newapproach__icon" src="/drop.png" alt="" />
+        <img className="car newapproach__icon" src="/car.png" alt="" />
+        <img className="newapproach-birds newapproach__icon" src="/birds.png" alt="" />
+        <div className="newapproach__left-section">
+          <div className="newapproach__logo">
+            <BookLogo />
+            <h6>ABOUT US</h6>
+          </div>
+          <h1>New Approach To Fun</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et.
+          </p>
+          <div className="our__focus">
+            <AboutUsCard icon={<RedTick/>} text="Best Teaching" />
+            <AboutUsCard icon={<RedTick/>} text="Quality Educators" />
+            <AboutUsCard icon={<RedTick/>} text="Expert Tutors" />
+            <AboutUsCard icon={<RedTick/>} text="Affordable" />
+          </div>
+          <Button title="Find Events" />
+        </div>
+        <div className="newapproach__right-section">
+          <img className="smilingbaby" src="/smilingbaby.png" alt="smilingbaby" />
+
+        </div>
+      </section>
     </section>
   );
 }
