@@ -3,6 +3,7 @@
   height: 600px;
   display: flex;
   gap: 25px;
+  align-items: center;
   position: relative;
   background-color: var(--gray);
   padding-left: var(--default-padding-left);
@@ -23,8 +24,8 @@
 .car {
   width: 65px;
   height: 58px;
-  top: 132.08px;
-  left: 400px;
+  top: 100px;
+  left: 430px;
 }
 
 .rainbow {
@@ -51,10 +52,12 @@
 
 .newapproach__left-section {
   width: 50%;
+  height: 450px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 15px 0px;
+  /* gap: 20px; */
+  /* padding: 15px 0px; */
+  /* border: 2px solid red; */
 }
 
 .newapproach__logo {
@@ -62,6 +65,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  /* border: 2px solid blueviolet; */
 }
 
 .newapproach__logo h6 {
@@ -69,7 +73,7 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 0px;
   letter-spacing: 0%;
   vertical-align: middle;
   color: var(--yellow);
@@ -80,7 +84,7 @@
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
-  line-height: 58.5px;
+  /* line-height: 58.5px; */
   letter-spacing: 0%;
   vertical-align: middle;
   text-transform: capitalize;
@@ -91,10 +95,11 @@
   font-weight: 400;
   font-style: Regular;
   font-size: 17px;
-  line-height: 20px;
+  /* line-height: 20px; */
   letter-spacing: 0%;
   vertical-align: middle;
   color: var(--text);
+  /* border: 2px solid green; */
 }
 
 .our__focus {

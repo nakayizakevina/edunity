@@ -4,6 +4,9 @@ import "./Features.css";
 import "./Aboutus.css";
 import "./Review.css";
 import "./Newapproach.css";
+import "./Parents.css";
+import "./Instructor.css";
+import "./PopularPost.css";
 
 import Header from "../../components/Header/Header.jsx";
 import NavBar from "../../components/Header/NavBar.jsx";
@@ -11,17 +14,23 @@ import Button from "../../components/Button/Button.jsx";
 import FeaturedCard from "../../components/FeaturedCard/FeaturedCard.jsx";
 import AboutUsCard from "../../components/AboutUsCard/AboutUsCard.jsx";
 import ReviewCounts from "../../components/ReviewCounts/ReviewCounts.jsx";
+import ParentsCard from "../../components/ParentsCard/ParentsCard.jsx";
+import InstructorCard from "../../components/InstructorCard/InstructorCard.jsx";
+import PopularPost from "../../components/PopularPost/PopularPost.jsx";
+import Logo from "../../components/Logo/Logo.jsx";
+
 import Play from "../../assets/Icons/play.svg?react";
 import Course from "../../assets/Icons/course.svg?react";
 import Teacher from "../../assets/Icons/teacher.svg?react";
 import House from "../../assets/Icons/house.svg?react";
-import BookLogo from "../../assets/Icons/booklogo.svg?react";
-import Tick from '../../assets/Icons/tick.svg?react';
-import RedTick from '../../assets/Icons/redtick.svg?react';
+import Tick from "../../assets/Icons/tick.svg?react";
+import RedTick from "../../assets/Icons/redtick.svg?react";
 import Award from "../../assets/Icons/award.svg?react";
 import Classroom from "../../assets/Icons/classroom.svg?react";
 import Handshake from "../../assets/Icons/handshake.svg?react";
 import Man from "../../assets/Icons/man.svg?react";
+import Preview from "../../assets/Icons/preview.svg?react";
+import Next from "../../assets/Icons/next.svg?react";
 
 export default function Home() {
   return (
@@ -156,10 +165,7 @@ export default function Home() {
           </div>
         </div>
         <div className="aboutus__right-section">
-          <div className="aboutus__logo">
-            <BookLogo />
-            <h6>ABOUT US</h6>
-          </div>
+          <Logo title="ABOUT US"/>
           <h1>
             It's our passion to work with children at{" "}
             <span className="kindergarden">kindergarten.</span>
@@ -170,10 +176,10 @@ export default function Home() {
             ad minim veniam, quis nostrud..
           </p>
           <div className="our__focus">
-            <AboutUsCard icon={<Tick/>} text="QUALITY EDUCATIORS" />
-            <AboutUsCard icon={<Tick/>} text="PLAY TO LEARN" />
-            <AboutUsCard icon={<Tick/>} text="SAFETY AND SECURITY" />
-            <AboutUsCard icon={<Tick/>} text="HOMELIKE ENVIROMEND" />
+            <AboutUsCard icon={<Tick />} text="QUALITY EDUCATIORS" />
+            <AboutUsCard icon={<Tick />} text="PLAY TO LEARN" />
+            <AboutUsCard icon={<Tick />} text="SAFETY AND SECURITY" />
+            <AboutUsCard icon={<Tick />} text="HOMELIKE ENVIROMEND" />
           </div>
           <Button title="Admission Open" />
         </div>
@@ -197,17 +203,24 @@ export default function Home() {
 
         <img className="reviewimg" src="/reviewimg.png" alt="Kids playing" />
         <div className="review__numbers">
-          <ReviewCounts icon={<Man />} number="2,500" text="Total Teacher" />
-          <ReviewCounts
-            icon={<Handshake />}
-            number="5,000"
-            text="Total Student"
-          />
-          <ReviewCounts
-            icon={<Classroom />}
-            number="350"
-            text="Total Classroom"
-          />
+          <div className="review__border">
+            <ReviewCounts icon={<Man />} number="2,500" text="Total Teacher" />
+          </div>
+          <div className="review__border">
+            <ReviewCounts
+              icon={<Handshake />}
+              number="5,000"
+              text="Total Student"
+            />
+          </div>
+          <div className="review__border">
+            <ReviewCounts
+              icon={<Classroom />}
+              number="350"
+              text="Total Classroom"
+            />
+          </div>
+
           <ReviewCounts
             icon={<Award />}
             number="1,200"
@@ -220,29 +233,118 @@ export default function Home() {
         <img className="wave newapproach__icon" src="/wave.png" alt="" />
         <img className="drop newapproach__icon" src="/drop.png" alt="" />
         <img className="car newapproach__icon" src="/car.png" alt="" />
-        <img className="newapproach-birds newapproach__icon" src="/birds.png" alt="" />
+        <img
+          className="newapproach-birds newapproach__icon"
+          src="/birds.png"
+          alt=""
+        />
         <div className="newapproach__left-section">
-          <div className="newapproach__logo">
-            <BookLogo />
-            <h6>ABOUT US</h6>
-          </div>
+          <Logo />
           <h1>New Approach To Fun</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et.
           </p>
           <div className="our__focus">
-            <AboutUsCard icon={<RedTick/>} text="Best Teaching" />
-            <AboutUsCard icon={<RedTick/>} text="Quality Educators" />
-            <AboutUsCard icon={<RedTick/>} text="Expert Tutors" />
-            <AboutUsCard icon={<RedTick/>} text="Affordable" />
+            <AboutUsCard icon={<RedTick />} text="Best Teaching" />
+            <AboutUsCard icon={<RedTick />} text="Quality Educators" />
+            <AboutUsCard icon={<RedTick />} text="Expert Tutors" />
+            <AboutUsCard icon={<RedTick />} text="Affordable" />
           </div>
           <Button title="Find Events" />
         </div>
         <div className="newapproach__right-section">
-          <img className="smilingbaby" src="/smilingbaby.png" alt="smilingbaby" />
-
+          <img
+            className="smilingbaby"
+            src="/smilingbaby.png"
+            alt="smilingbaby"
+          />
         </div>
+      </section>
+      <section className="parents__section">
+        <img
+          className="parents__cloud parents__logos"
+          src="/cloud.png"
+          alt="cloud"
+        />
+        <img className="parents__sun parents__logos" src="/sun.png" alt="sun" />
+        <div>
+           <Logo title="TESTMONIAL"/>
+          <h1 className="parents__header">What Parents Say</h1>
+        </div>
+        <div className="parents__testimonial">
+          <ParentsCard
+            message="Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim.
+            Amet consectetur adipiscing"
+            image={<img src="/parent1.png" />}
+            name="Kathy Sullivan"
+            title="CEO at ordian it"
+          />
+          <ParentsCard
+            message="Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim.
+            Amet consectetur adipiscing"
+            image={<img src="/parent2.png" />}
+            name="Elsie Stroud"
+            title="CEO at Edwards"
+          />
+           <ParentsCard
+            message="Lorem ipsum dolor sit amet, elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim.
+            Amet consectetur adipiscing"
+            image={<img src="/parent1.png" />}
+            name="Kathy Sullivan"
+            title="CEO at ordian it"
+          />
+        </div>
+      </section>
+      <section className="instructor__section">
+        <img className="instructor__birds" src="/birds2.png" alt="" />
+        <div className="instructor__heading">
+          <Logo title="TEACHER"/>
+          <div className="instructor__header">
+            <p>Meet our Instructor</p>
+            <div className="instructor__nav">
+              <Preview className="instructor__navicons" />
+              <Next className="instructor__navicons" />
+            </div>
+          </div>
+        </div>
+        <div className="instructors">
+          <InstructorCard image={<img className="instructor__img" src="/cheryl.png"/>} name="Cheryl Curry" role="Teacher"/>
+          <InstructorCard image={<img className="instructor__img" src="/cheryl.png"/>} name="Cheryl Curry" role="Teacher"/>
+          <InstructorCard image={<img className="instructor__img" src="/cheryl.png"/>} name="Cheryl Curry" role="Teacher"/>
+          <InstructorCard image={<img className="instructor__img" src="/cheryl.png"/>} name="Cheryl Curry" role="Teacher"/>
+        </div>
+      </section>
+      <section className="PopularPost__section">
+        <img
+          className="popularpost__icons popular__birds"
+          src="/birds.png"
+          alt="birds"
+        />
+        <img
+          className="popularpost__icons curve"
+          src="/curve.png"
+          alt="curve"
+        />
+        <div className="instructor__heading">
+          <Logo title="EXPLORE NEWLETTER"/>
+          <div className="instructor__header">
+            <p>Most Popular Post</p>
+            <Button title="All Blog Post"/>
+          </div>
+        </div>
+        <div className="popularpost__galley">
+           <PopularPost image={<img className="popular__post" src="/babywritting.png" alt="" />} date="15th April, 2025" message="Comments (06)" text="velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+           occaecat cupidatat" />
+           <PopularPost image={<img className="popular__post" src="/grouphoto.png" alt="" />} date="15th April, 2025" message="Comments (06)" text="velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+           occaecat cupidatat" />
+           <PopularPost image={<img className="popular__post" src="/kidsplaying.png" alt="" />} date="15th April, 2025" message="Comments (06)" text="velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+           occaecat cupidatat" />
+        </div>
+        
       </section>
     </section>
   );

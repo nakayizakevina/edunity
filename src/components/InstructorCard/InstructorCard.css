@@ -1,0 +1,36 @@
+.instructor__card {
+  width: 220px;
+  height: 370px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:var(--white);
+}
+
+.instructor__info{
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.instructor__info h3 {
+  width: 134px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 0;
+  color: var(--blue);
+}
+
+.instructor__info p {
+  width: 68px;
+  font-family: Sora;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 17px;
+  line-height: 0;
+  color: var(--yellow);
+}

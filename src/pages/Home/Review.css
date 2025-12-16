@@ -58,5 +58,10 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  /* border: 2px solid black; */
+}
+
+.review__border{
+  height: 160px;
+  padding-right: 50px;
+  border-right: 1px dashed var(--blue);
 }

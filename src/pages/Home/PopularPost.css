@@ -1,0 +1,37 @@
+.PopularPost__section {
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: var(--default-padding-left);
+  padding-right: var(--default-padding-right);
+  background-color: var(--white);
+  /* background-color: pink; */
+}
+
+.popularpost__icons {
+  position: absolute;
+}
+
+.popular__birds {
+  width: 200px;
+  height: 100px;
+  top: 60px;
+  left: 10px;
+}
+
+.curve {
+  width: 41;
+  height: 37;
+  top: 60px;
+  left: 700px;
+}
+
+.popular__post{
+  width: 280px;
+}
+
+.popularpost__galley{
+  display: flex;
+  gap: 10px;
+}
