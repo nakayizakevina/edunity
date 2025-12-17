@@ -57,7 +57,7 @@ export default function NavBar() {
       <div className="media">
         <Search className="nav__icon media__icon " />
         <Profile className="nav__icon media__icon" />
-        <Button title="Contact" />
+        <Button title="Contact" width="120px" bgColor="var(--yellow)" />
       </div>
     </nav>
   );

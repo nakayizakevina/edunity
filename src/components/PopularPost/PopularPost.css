@@ -21,6 +21,7 @@
   align-items: center;
   gap: 4px;
   color: var(--text);
+  font-family: sans-serif;
 }
 
 .post__content {

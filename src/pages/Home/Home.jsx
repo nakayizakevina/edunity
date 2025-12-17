@@ -72,7 +72,7 @@ export default function Home() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="welcome__section__cta">
-              <Button title="Browse Courses" />
+              <Button title="Browse Courses" width="140px" bgColor="var(--yellow)" />
               <div className="cta__nav">
                 <div className="cta__play">
                   <Play className="cta__play--icon" />
@@ -182,7 +182,7 @@ export default function Home() {
             <AboutUsCard icon={<Tick />} text="SAFETY AND SECURITY" />
             <AboutUsCard icon={<Tick />} text="HOMELIKE ENVIROMEND" />
           </div>
-          <Button title="Admission Open" />
+          <Button title="Admission Open" width="140px" bgColor="var(--yellow)" />
         </div>
       </section>
       <section className="review__section">
@@ -252,7 +252,7 @@ export default function Home() {
             <AboutUsCard icon={<RedTick />} text="Expert Tutors" />
             <AboutUsCard icon={<RedTick />} text="Affordable" />
           </div>
-          <Button title="Find Events" />
+          <Button title="Find Events" width="140px" bgColor="var(--green)" />
         </div>
         <div className="newapproach__right-section">
           <img
@@ -334,7 +334,7 @@ export default function Home() {
           <Logo title="EXPLORE NEWLETTER"/>
           <div className="instructor__header">
             <p>Most Popular Post</p>
-            <Button title="All Blog Post"/>
+            <Button title="All Blog Post" width="140px" bgColor="var(--yellow)"/>
           </div>
         </div>
         <div className="popularpost__galley">
