@@ -18,6 +18,7 @@ import ParentsCard from "../../components/ParentsCard/ParentsCard.jsx";
 import InstructorCard from "../../components/InstructorCard/InstructorCard.jsx";
 import PopularPost from "../../components/PopularPost/PopularPost.jsx";
 import Logo from "../../components/Logo/Logo.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 import Play from "../../assets/Icons/play.svg?react";
 import Course from "../../assets/Icons/course.svg?react";
@@ -344,8 +345,9 @@ export default function Home() {
            <PopularPost image={<img className="popular__post" src="/kidsplaying.png" alt="" />} date="15th April, 2025" message="Comments (06)" text="velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
            occaecat cupidatat" />
         </div>
-        
       </section>
+       <Footer/>
+
     </section>
   );
 }

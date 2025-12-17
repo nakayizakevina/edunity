@@ -1,4 +1,7 @@
 .Home__page{
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   overflow-x: hidden;
 }
